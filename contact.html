@@ -99,12 +99,7 @@
             <h2 style="font-size: 1.4rem; margin-bottom: 24px">
               Send a message
             </h2>
-            <form
-              onsubmit="
-                event.preventDefault();
-                this.querySelector('.form-success').style.display = 'flex';
-              "
-            >
+            <form action="https://formspree.io/f/xpqvrkda" method="POST">
               <div class="field">
                 <label for="name">Full name</label>
                 <input
@@ -115,6 +110,7 @@
                   required
                 />
               </div>
+
               <div class="field">
                 <label for="email">Email address</label>
                 <input
@@ -125,6 +121,7 @@
                   required
                 />
               </div>
+
               <div class="field">
                 <label for="subject">Subject</label>
                 <input
@@ -135,6 +132,7 @@
                   required
                 />
               </div>
+
               <div class="field">
                 <label for="message">Message</label>
                 <textarea
@@ -144,10 +142,15 @@
                   required
                 ></textarea>
               </div>
+
+              <!-- Spam protection -->
+              <input type="text" name="_gotcha" style="display: none" />
+
               <button type="submit" class="btn btn-primary btn-block">
                 Send message
                 <i data-lucide="send" style="width: 15px; height: 15px"></i>
               </button>
+
               <div
                 class="form-success"
                 style="
@@ -163,8 +166,8 @@
                   data-lucide="check-circle-2"
                   style="width: 16px; height: 16px"
                 ></i>
-                This is a static placeholder form — connect it to a form service
-                to receive real messages.
+                Your message has been sent successfully. I'll get back to you
+                soon.
               </div>
             </form>
           </div>
