@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Software Projects — Your Name</title>
+<meta name="description" content="Software projects built by Your Name — web applications and a cross-platform mobile app." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<link rel="stylesheet" href="assets/css/style.css" />
+<script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+
+<nav class="navbar">
+  <div class="wrap nav-inner">
+    <a href="index.html" class="nav-logo"><span class="bracket">&lt;</span>Your Name<span class="bracket">/&gt;</span></a>
+    <div class="nav-links">
+      <a href="index.html" data-nav-link="index.html">Home</a>
+      <a href="about.html" data-nav-link="about.html">About</a>
+      <a href="repairs.html" data-nav-link="repairs.html">Repairs</a>
+      <a href="projects.html" data-nav-link="projects.html">Projects</a>
+      <a href="certifications.html" data-nav-link="certifications.html">Certifications</a>
+      <a href="resume.html" data-nav-link="resume.html">Resume</a>
+      <a href="contact.html" data-nav-link="contact.html">Contact</a>
+    </div>
+    <div class="nav-cta">
+      <a href="resume.html" class="btn btn-secondary btn-sm btn-secondary-desktop">Resume</a>
+      <a href="contact.html" class="btn btn-primary btn-sm">Get in touch</a>
+      <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false"><i data-lucide="menu"></i></button>
+    </div>
+  </div>
+</nav>
+<div class="mobile-menu">
+  <a href="index.html" data-nav-link="index.html">Home</a>
+  <a href="about.html" data-nav-link="about.html">About</a>
+  <a href="repairs.html" data-nav-link="repairs.html">Technical Repairs</a>
+  <a href="projects.html" data-nav-link="projects.html">Software Projects</a>
+  <a href="certifications.html" data-nav-link="certifications.html">Certifications</a>
+  <a href="resume.html" data-nav-link="resume.html">Resume</a>
+  <a href="contact.html" data-nav-link="contact.html">Contact</a>
+</div>
+
+<header class="detail-hero">
+  <div class="wrap">
+    <span class="path-tag reveal">~/portfolio/<span class="seg-accent">projects</span></span>
+    <h1 class="reveal reveal-delay-1" style="margin-top:20px;">Software <span class="gradient-text">projects.</span></h1>
+    <p class="reveal reveal-delay-2" style="margin-top:18px; max-width:640px; font-size:1.05rem;">
+      Applications I've designed and built end-to-end — from problem definition through architecture, features, and what I'd improve next.
+    </p>
+  </div>
+</header>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid grid-3">
+
+      <a href="assets/projects/queueing-management-system.html" class="card reveal" style="padding:0; overflow:hidden;">
+        <div class="ph" style="border-radius:0; border-top:none; border-left:none; border-right:none; min-height:170px;">
+          <i data-lucide="monitor" style="width:26px;height:26px;"></i>
+          <span class="label">screenshot-placeholder.png</span>
+        </div>
+        <div style="padding:26px;">
+          <span class="tag">Web App</span>
+          <h3 style="margin-top:14px; font-size:1.1rem;">Queueing Management System</h3>
+          <p style="margin-top:8px; font-size:0.9rem;">A digital ticketing and counter-call system reducing wait-time confusion at service counters.</p>
+          <span style="display:inline-flex; align-items:center; gap:6px; margin-top:16px; font-size:0.85rem; color:var(--accent);">View project <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
+        </div>
+      </a>
+
+      <a href="assets/projects/conversative.html" class="card reveal reveal-delay-1" style="padding:0; overflow:hidden;">
+        <div class="ph" style="border-radius:0; border-top:none; border-left:none; border-right:none; min-height:170px;">
+          <i data-lucide="monitor" style="width:26px;height:26px;"></i>
+          <span class="label">screenshot-placeholder.png</span>
+        </div>
+        <div style="padding:26px;">
+          <span class="tag">Web App</span>
+          <h3 style="margin-top:14px; font-size:1.1rem;">Conversative</h3>
+          <p style="margin-top:8px; font-size:0.9rem;">A conversation-focused platform exploring structured, threaded dialogue.</p>
+          <span style="display:inline-flex; align-items:center; gap:6px; margin-top:16px; font-size:0.85rem; color:var(--accent);">View project <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
+        </div>
+      </a>
+
+      <a href="assets/projects/flutter-application.html" class="card reveal reveal-delay-2" style="padding:0; overflow:hidden;">
+        <div class="ph" style="border-radius:0; border-top:none; border-left:none; border-right:none; min-height:170px;">
+          <i data-lucide="smartphone" style="width:26px;height:26px;"></i>
+          <span class="label">screenshot-placeholder.png</span>
+        </div>
+        <div style="padding:26px;">
+          <span class="tag">Mobile</span>
+          <h3 style="margin-top:14px; font-size:1.1rem;">Flutter Application</h3>
+          <p style="margin-top:8px; font-size:0.9rem;">A cross-platform mobile app built with Flutter, focused on clean UX and offline reliability.</p>
+          <span style="display:inline-flex; align-items:center; gap:6px; margin-top:16px; font-size:0.85rem; color:var(--accent);">View project <i data-lucide="arrow-right" style="width:14px;height:14px;"></i></span>
+        </div>
+      </a>
+
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-top">
+      <div>
+        <a href="index.html" class="nav-logo"><span class="bracket">&lt;</span>Your Name<span class="bracket">/&gt;</span></a>
+        <p style="margin-top:14px; max-width:280px; font-size:0.9rem;">IT Hardware Technician &amp; Software Developer, open to opportunities worldwide.</p>
+        <div class="social-row" style="margin-top:20px;">
+          <a href="#" aria-label="GitHub"><i data-lucide="github" style="width:18px;height:18px;"></i></a>
+          <a href="#" aria-label="LinkedIn"><i data-lucide="linkedin" style="width:18px;height:18px;"></i></a>
+          <a href="mailto:you@example.com" aria-label="Email"><i data-lucide="mail" style="width:18px;height:18px;"></i></a>
+        </div>
+      </div>
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Site</h4>
+          <a href="index.html">Home</a>
+          <a href="about.html">About</a>
+          <a href="repairs.html">Repairs</a>
+          <a href="projects.html">Projects</a>
+        </div>
+        <div class="footer-col">
+          <h4>More</h4>
+          <a href="certifications.html">Certifications</a>
+          <a href="resume.html">Resume</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-col">
+          <h4>Status</h4>
+          <span class="status-pill"><span class="dot"></span>Available for hire</span>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span data-year></span> Your Name. Built with HTML, Tailwind &amp; vanilla JS.</span>
+      <span>Deployed on GitHub Pages</span>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>
